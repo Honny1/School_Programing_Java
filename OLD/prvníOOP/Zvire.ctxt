@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=druhZvirete\ rokNarozeni\ jmeno\ zvuk\ hmotnost
+comment0.target=Zvire(java.lang.String,\ int,\ java.lang.String,\ java.lang.String,\ float)
+comment0.text=\r\nkonstruktor\r\n
+comment1.params=aktualniRok
+comment1.target=int\ vek(int)
+comment2.params=
+comment2.target=void\ ozviSe()
+comment3.params=hmotnostZradla
+comment3.target=void\ zeru(float)
+comment4.params=
+comment4.target=java.lang.String\ getJmeno()
+numComments=5
