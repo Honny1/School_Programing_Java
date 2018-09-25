@@ -43,6 +43,7 @@ public class Car {
         return this.fullMax-this.fuelLevel;
     }
     void go(float km){
-        
+        this.mileage+=km;
+        this.fuelLevel-=this.avarageUse/100*km;
     }
 }
