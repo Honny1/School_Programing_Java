@@ -43,7 +43,15 @@ public class Car {
         return this.fullMax-this.fuelLevel;
     }
     void go(float km){
-        this.mileage+=km;
-        this.fuelLevel-=this.avarageUse/100*km;
+        if(this.range()>km){
+            this.mileage+=km;
+            this.fuelLevel-=this.avarageUse*km/100;
+        }else {
+            this.mileage+=this.range();
+            this.fuelLevel-=this.avarageUse*this.range()/100;
+        }
+    }
+    private float range(){
+        return 100*this.fuelLevel/this.avarageUse;
     }
 }
