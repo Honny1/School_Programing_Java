@@ -22,7 +22,7 @@ public class Main {
             System.out.println(shape);
             System.out.println("area= "+ shape.area() + " circumference= "+ shape.circumference());
             if (shape instanceof Triangle){
-                System.out.println("Triangle= "+ ((Triangle) shape).isExist());
+                System.out.println("Triangle= " + ((((Triangle) shape).isExist()) ? "není" : "je")+" sestrojitelný");
             }
         }
     }

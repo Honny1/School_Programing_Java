@@ -34,10 +34,6 @@ public class Triangle extends FlatShape {
 
 
     public boolean isExist() {
-        if (this.sideA+this.sideB > this.sideC && this.sideA+this.sideC > this.sideB && this.sideA+this.sideC > this.sideB){
-            return true;
-        }else {
-            return false;
-        }
+        return this.sideA+this.sideB > this.sideC && this.sideA+this.sideC > this.sideB && this.sideA+this.sideC > this.sideB;
     }
 }
