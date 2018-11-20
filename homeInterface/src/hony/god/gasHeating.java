@@ -11,7 +11,7 @@ public class gasHeating implements IOnOff, ITempControl {
     @Override
     public void tempChange(int degree){
         System.out.println("tempUpBy: "+degree);
-        this.temp+=degree;
+        this.temp=degree;
     }
     @Override
     public void on(){
@@ -22,5 +22,9 @@ public class gasHeating implements IOnOff, ITempControl {
     public void off(){
         System.out.println("END  termostat");
         this.termostatStatus=true;
+    }
+
+    public String toString(){
+        return "GasHeating: {temp: "+ this.temp+" termostat: "+this.termostatStatus+"}";
     }
 }
