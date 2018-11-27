@@ -1,5 +1,8 @@
 package hony.god;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,7 +12,7 @@ public class Main {
 	    ghl.on();
 	    System.out.print(ghl);
 
-        */
+
 	    IOnOff[] devices = new IOnOff[5];
 	    devices[0]= new gasHeating(22);
         devices[1]= new television();
@@ -27,6 +30,14 @@ public class Main {
             }
 
             System.out.println(devices[i]);
+        }*/
+        List<IOnOff> devices= new ArrayList<>();
+        devices.add(new gasHeating(22));
+        devices.add(new television());
+        devices.add(new television());
+
+        for (IOnOff device: devices){
+            System.out.println(device);
         }
 
     }
