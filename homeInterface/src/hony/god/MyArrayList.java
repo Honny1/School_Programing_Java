@@ -8,7 +8,7 @@ public class MyArrayList<E> {
     public MyArrayList(){
         this.counter_len=5;
         this.useLen=0;
-        this.array= (E[])(new Object[this.counter_len]);
+        this.array= (E[]) new Object[this.counter_len];
     }
 
     public int size(){
@@ -16,11 +16,10 @@ public class MyArrayList<E> {
     }
 
     public void add(E instance){
-        if (useLen<counter_len){
-            this.array[useLen++]=instance;
-        }else{
+        if (useLen==this.array.length){
             boostArray();
         }
+        this.array[useLen++]=instance;
     }
 
     private void boostArray() {
