@@ -16,7 +16,7 @@ public class MyArrayList<E> {
 
     public void add(E instance){
         if (this.useLen==this.array.length){
-            boostArray();
+            this.boostArray();
         }
         this.array[this.useLen]=instance;
         this.useLen++;
@@ -32,6 +32,15 @@ public class MyArrayList<E> {
 
     public E get(int index){
         return this.array[index];
+    }
+
+    public String toString(){
+        String output = "array=[";
+        for (int i=0;i<this.size();i++){
+            output += this.array[i].toString() + ", ";
+        }
+        output+=" ]";
+        return output;
     }
 
 }
