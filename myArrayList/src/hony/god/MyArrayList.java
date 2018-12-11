@@ -37,9 +37,12 @@ public class MyArrayList<E> {
     public String toString(){
         String output = "array=[";
         for (int i=0;i<this.size();i++){
-            output += this.array[i].toString() + ", ";
+            if(i==0){
+                output += this.array[i].toString();
+            }
+            output += ", " + this.array[i].toString();
         }
-        output+=" ]";
+        output+="]";
         return output;
     }
 
