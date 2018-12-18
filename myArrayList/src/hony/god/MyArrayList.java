@@ -18,8 +18,7 @@ public class MyArrayList<E> {
         if (this.useLen==this.array.length){
             this.boostArray();
         }
-        this.array[this.useLen]=instance;
-        this.useLen++;
+        this.array[this.useLen++]=instance;
     }
 
     private void boostArray() {
