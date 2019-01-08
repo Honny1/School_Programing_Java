@@ -1,6 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        MyStack<Object> nums = new MyStack<>();
+        for(int i =0 ; i<100;i++){
+            nums.push(i);
+
+        }
+        nums.push("ahoj");
+        System.out.print(nums);
+
     }
 }
