@@ -12,17 +12,16 @@ public class MyStack<E> {
         this.top = newItem;
     }
 
-    public Item<E> pop(){
-        Item<E> item =this.top;
-        this.top=item.getPrevious();
+    public E pop(){
+        E item =this.top.getValue();
+        this.top=this.top.getPrevious();
         return item;
     }
 
     public String toString(){
-        String out = "Stack:{ ";
-        while (this.top!=null){
-            out += this.pop();
-            out += ", ";
+        String out = "Stack: { ";
+        for (Item <E> pointer = this.top;pointer!=null;pointer=pointer.getPrevious()){
+            out += pointer.toString() + " ";
         }
         out+= "}";
         return  out;

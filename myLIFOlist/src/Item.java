@@ -16,6 +16,10 @@ public class Item <E> {
         this.previous = previous;
     }
 
+    public E getValue() {
+        return value;
+    }
+
     @Override
     public String toString() {
         return this.value.toString();

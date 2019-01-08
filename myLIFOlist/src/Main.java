@@ -1,13 +1,14 @@
 public class Main {
 
     public static void main(String[] args) {
-        MyStack<Object> nums = new MyStack<>();
+        MyStack<Object> stack = new MyStack<>();
         for(int i =0 ; i<100;i++){
-            nums.push(i);
-
+            stack.push(i);
         }
-        nums.push("ahoj");
-        System.out.print(nums);
+        stack.push("ahoj");
+        System.out.println(stack);
 
+        System.out.println("Odebrano: "+(String) stack.pop());
+        System.out.println(stack);
     }
 }
