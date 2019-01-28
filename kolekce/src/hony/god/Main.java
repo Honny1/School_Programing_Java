@@ -7,6 +7,7 @@ import java.util.HashSet;
 public class Main {
 
     public static void main(String[] args) {
+
         //ArrayList
         ArrayList<String> al = new ArrayList<String>();
         al.add("prvni");
