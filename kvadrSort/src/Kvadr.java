@@ -26,7 +26,7 @@ public class Kvadr implements Comparable<Kvadr> {
     }
     @Override
     public String toString() {
-        String out= String.format("Kvádr :{a= %s, b= %s, c= %s, objem= %s }", this.getA(), this.getB(), this.getC(),this.getVolume());
+        String out= String.format("Kvádr :{a= %d, b= %d, c= %d, volume= %d }", this.getA(), this.getB(), this.getC(),this.getVolume());
         return out;
     }
 

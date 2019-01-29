@@ -13,7 +13,7 @@ public class Main {
 
         System.out.println("Original list: " +k);
 
-        System.out.println("by AGE:");
+        System.out.println("Sorted by Volume:");
         Collections.sort(k);
         System.out.println("Sorted list: "+k);
     }
