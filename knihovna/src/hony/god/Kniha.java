@@ -21,8 +21,8 @@ public class Kniha {
 
     @Override
     public String toString() {
-        return "Kniha {"+"ID = " + this.ID + "Name = " + this.jmeno
-                + ", cena = " + this.cena + ", rok vydání = " + this.rokVydani + "Jmeno Autora= "+this.autorJmeno
+        return "Kniha {"+"ID = " + this.ID + ", Name = " + this.jmeno
+                + ", cena = " + this.cena + ", rok vydání = " + this.rokVydani + ", Jmeno Autora= "+this.autorJmeno
                 +" "+this.autorPrimeni+'}';
     }
 

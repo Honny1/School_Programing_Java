@@ -42,8 +42,8 @@ public class Casopis {
     }
 
     public String toString() {
-        return "Casopis {"+"ID = " + this.ID + "Name = " + this.jmeno
-                + ", cena = " + this.cena + ", rok vydání = " + this.rokVydani +"cislo="+this.cislo+ "nakladatelství = "+this.nakladatelstvi
+        return "Casopis {"+"ID = " + this.ID + ", Name = " + this.jmeno
+                + ", cena = " + this.cena + ", rok vydání = " + this.rokVydani +", cislo="+this.cislo+ ", nakladatelství = "+this.nakladatelstvi
                 +'}';
     }
 }
